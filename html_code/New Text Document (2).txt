@@ -1,0 +1,36 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My ID Card</title>
+</head>
+
+<body>
+
+    <h1>Student ID Card</h1>
+
+    <img src="Profile.jpg" alt="Profile Picture" width="150">
+
+    <h2>Vihanga Madusha</h2>
+
+    <p><b>Student</b></p>
+
+    <p>
+        <b>Skills:</b> HTML, C
+    </p>
+
+    <p>
+        <b>Hobbies:</b> Reading, Gaming, Travelling
+    </p>
+
+    <p>
+        <b>Email:</b> vihanga@example.com
+    </p>
+
+    <p>
+        <b>Student ID:</b> IT001
+    </p>
+
+</body>
+</html>
+```

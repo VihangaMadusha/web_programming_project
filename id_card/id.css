@@ -1,0 +1,162 @@
+:root {
+    --navy: #0f2a5c;
+    --navy-deep: #081a3d;
+    --gold: #d4a62a;
+    --gold-soft: #f3e2a9;
+    --ink: #1c2540;
+    --muted: #6b7591;
+    --page: #e6ecf6;
+    --card: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: var(--page);
+    background-image: radial-gradient(circle at 20% 15%, #d3ddf0 0, transparent 45%),
+                      radial-gradient(circle at 85% 90%, #f3e9c8 0, transparent 40%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--ink);
+}
+
+.id-card {
+    width: 350px;
+    max-width: 100%;
+    background: var(--card);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 0 26px;
+    box-shadow: 0 20px 45px rgba(15, 42, 92, 0.25);
+    border-bottom: 6px solid var(--gold);
+}
+
+/* Header band with diagonal pattern */
+.card-header {
+    background-color: var(--navy);
+    background-image:
+        repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 14px);
+    padding: 22px 20px 70px;
+    border-bottom: 4px solid var(--gold);
+    /* curved bottom edge */
+    border-radius: 0 0 50% 50% / 0 0 28px 28px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.card-type {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--gold-soft);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Photo overlapping the header */
+.photo-wrap {
+    margin-top: -55px;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: var(--gold-soft);
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 4px var(--gold), 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    color: var(--navy);
+    font-size: 22px;
+    margin: 16px 0 6px;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--gold-soft);
+    color: var(--navy-deep);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 999px;
+}
+
+/* Detail rows */
+.details {
+    margin: 22px 26px 16px;
+    border-top: 1px dashed #c5cde0;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 11px 4px;
+    font-size: 15px;
+    text-align: left;
+    border-bottom: 1px dashed #c5cde0;
+}
+
+p b {
+    color: var(--muted);
+    font-weight: 500;
+}
+
+p span {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* Decorative barcode */
+.barcode {
+    height: 34px;
+    margin: 18px 40px 20px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--navy-deep) 0 2px, transparent 2px 4px,
+        var(--navy-deep) 4px 5px, transparent 5px 9px,
+        var(--navy-deep) 9px 12px, transparent 12px 14px,
+        var(--navy-deep) 14px 15px, transparent 15px 19px
+    );
+    border-radius: 2px;
+}
+
+a {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--navy), #1d4290);
+    color: #fff;
+    padding: 11px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 6px 14px rgba(15, 42, 92, 0.3);
+    transition: transform 0.2s, background 0.2s;
+}
+
+a:hover {
+    background: linear-gradient(135deg, #1d4290, #2f5fc4);
+    transform: translateY(-2px);
+}
+
+a:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
