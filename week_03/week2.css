@@ -1,0 +1,146 @@
+/* ---------- Original styles ---------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: #444;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Buttons ---------- */
+button {
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: darkblue;          /* default button colour */
+    transition: background-color 0.3s;   /* smooth colour change */
+}
+
+button:hover {
+    background-color: #1e1eb4;
+}
+
+.alert-btn {
+    background-color: crimson;
+}
+
+.alert-btn:hover {
+    background-color: darkred;
+}
+
+.popup-btn {
+    background-color: darkorange;
+}
+
+.popup-btn:hover {
+    background-color: teal;
+}
+
+.github-btn {
+    background-color: #24292e;
+}
+
+.github-btn:hover {
+    background-color: #0366d6;
+}
+
+.close-btn {
+    background-color: gray;
+}
+
+.close-btn:hover {
+    background-color: #555;
+}
+
+/* ---------- Popup ---------- */
+.popup-overlay {
+    display: none;                 /* hidden until the button is clicked */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-box {
+    background-color: white;
+    width: 300px;
+    margin: 150px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.popup-box h2 {
+    color: darkblue;
+}
+
+/* ---------- Message shown on the page after alert ---------- */
+.alert-message {
+    display: none;
+    width: 300px;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #ffe0e0;
+    color: #a00000;
+    border: 1px solid crimson;
+}
+
+/* ---------- Profile picture ---------- */
+#profilePic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;      /* keeps any picture round and not stretched */
+}
+
+.img-btn {
+    background-color: purple;
+}
+
+.img-btn:hover {
+    background-color: #b300b3;
+}
+
+.reset-btn {
+    background-color: gray;
+}
+
+.reset-btn:hover {
+    background-color: #555;
+}
